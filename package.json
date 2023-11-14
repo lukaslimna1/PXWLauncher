@@ -6,14 +6,20 @@
   "scripts": {
     "start": "electron .",
     "test": "mocha --require setup.js"
-    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.6.0",
-    "electron": "^27.0.3"
+    "axios": "^1.6.1",
+    "cross-env": "^7.0.3",
+    "electron": "^27.0.4",
+    "electron-builder": "^24.6.4",
+    "electron-updater": "^6.1.4",
+    "jimp": "^0.22.10",
+    "minecraft-java-core": "^3.8.1",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.0.1"
   },
   "devDependencies": {
     "mocha": "^10.2.0",

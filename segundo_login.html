@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Pixelmon World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.2-web/css/all.css">
+</head>
+
+<body id="login">
+    <div class="login-logo-container">
+         <button class="back-button" onclick="window.location.href='login.html'">
+        <i class="fas fa-arrow-left"></i> Voltar
+    </button>
+        <!-- Logo do Launcher -->
+        <img src="assets/img/Logo TESTE.png" alt="Logo do Launcher" class="launcher-logo">
+    </div>
+    <div class="login-content">
+        <div class="login-card">
+            <p>Faça Login em sua conta <span class="store">Pixelmon World</span>            
+            <div class="login-input">
+                <label>E-mail</label>
+                <input type="text" class="login-username login-input" spellcheck="false">
+                <small class="login-error-username">&nbsp;</small>
+            </div>
+
+            <div class="login-input">
+                <label>Senha</label>
+                <input type="password" class="login-password login-input" spellcheck="false">
+                <small class="login-error-password">&nbsp;</small>
+            </div>
+
+            <div class="login-options">
+                <div class="btn-option-login">
+                    <button type="submit" class="login-btn">LOGIN</button>
+                    <!-- Botão "Esqueci a Senha" dentro do formulário -->
+                    <button id="forgot-password-btn" class="login-btn" onclick="recuperarSenha()">Esqueci a senha</button>
+                </div>
+            </div>
+            </form>
+            <script src="script.js"></script>
+
+            <script>
+                function recuperarSenha() {
+                    // Adicione a lógica aqui para lidar com a recuperação de senha usando JS
+                    console.log('Esqueci a senha clicado!');
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

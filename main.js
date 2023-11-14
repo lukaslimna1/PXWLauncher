@@ -6,18 +6,20 @@ let mainWindow;
 function createWindow() {
     // Crie a janela do navegador.
     mainWindow = new BrowserWindow({
-        width: 938, // Largura da janela
-        height: 575, // Altura da janela
-        icon: path.join(__dirname, 'Imagens/Social/Discord-Laranja.png'), // Caminho para o ícone do aplicativo
-        resizable: false, // Impede que o usuário redimensione a janela
-        //frame: false, // Remove a barra de título
+        width: 938,
+        height: 575,
+        icon: path.join(__dirname, 'Imagens/Social/Discord-Laranja.png'),
+        resizable: false,
         webPreferences: {
-            nodeIntegration: true
+            nodeIntegration: true,
+            contextIsolation: false, // Adicione esta linha
+            enableRemoteModule: true, // Adicione esta linha
         }
-        
     });
+
     // Remove a barra de menu padrão
     mainWindow.setMenu(null);
+
     // Carregue o arquivo index.html na janela.
     mainWindow.loadFile('index.html');
 
@@ -36,8 +38,7 @@ function createWindow() {
 // e estiver pronto para criar janelas do navegador.
 app.whenReady().then(createWindow);
 
-// Saia quando todas as janelas estiverem fechadas, exceto no macOS. No macOS, é comum
-// para aplicativos e sua barra de menu permanecerem ativos até que o usuário saia explicitamente com Cmd + Q.
+// Saia quando todas as janelas estiverem fechadas, exceto no macOS.
 app.on('window-all-closed', function () {
     if (process.platform !== 'darwin') app.quit();
 });

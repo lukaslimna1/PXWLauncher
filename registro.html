@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Pixelmon World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.2-web/css/all.css">
+</head>
+
+<body>
+    <button class="back-button" onclick="window.location.href='login.html'">
+        <i class="fas fa-arrow-left"></i> Voltar
+    </button>
+    <div class="registro-content"> 
+        <div class="registro-card">
+            <p>Crie uma nova conta <span class="store">Pixelmon World</span> para acessar o launcher.</p>
+            <div class="registro-type">
+            </div>
+            <button class="cancel cancel-registro" style="display: none;">Cancelar</button>
+
+            <!-- Formulário de Registro -->
+            <form id="registro-form">
+                <div class="registro-input">
+                    <label>Nome de Usuário</label>
+                    <input type="text" class="Username registro-input" spellcheck="false">
+                    <small class="error-username">&nbsp;</small>
+                </div>
+
+                <div class="registro-input">
+                    <label>Endereço de E-mail</label>
+                    <input type="text" class="Mail registro-input" spellcheck="false">
+                    <small class="error-mail">&nbsp;</small>
+                </div>
+
+                <div class="registro-input">
+                    <label>Senha</label>
+                    <input type="password" class="Password registro-input" spellcheck="false">
+                    <small class="error-password">&nbsp;</small>
+                </div>
+
+                <div class="registro-options">
+                    <div class="btn-option-registro">
+                        <button type="submit" class="registro-btn">Criar Conta</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
