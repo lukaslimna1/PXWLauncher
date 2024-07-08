@@ -19,6 +19,8 @@ O Pixelmon World Launcher é uma aplicação de desktop baseada em Electron, pro
 - A página inicial recebe os usuários com um plano de fundo visualmente atraente e um botão "Iniciar Jogo" proeminente.
 - Ícones de redes sociais permitem que os usuários se conectem à comunidade em várias plataformas.
 - Opções para configurações e login/logout são facilmente acessíveis.
+(https://github.com/lukaslimna1/PXWLauncher/blob/main/Prints/PXW-Launcher%20-%20Pagina%20inicial.png)
+
 
 ### 2. Página de Login
 - Os usuários podem fazer login usando suas contas da Microsoft ou do Pixelmon World.
